@@ -1,0 +1,63 @@
+.main-search {}
+
+.main-search-box {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.main-search>.carousel-indicators {
+    height: auto;
+}
+
+.main-search>.carousel-indicators li {
+    color: white;
+    background-color: initial;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-search>.carousel-indicators .active {
+    background-color: initial;
+    border-color: #fff;
+}
+
+.main-search>.carousel-indicators li {
+    padding: 8px 16px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+
+.main-search>.carousel-indicators li:before,
+.main-search>.carousel-indicators li:after {
+    display: none;
+}
+
+.main-search>.carousel-indicators li * {
+    color: white;
+}
+
+.main-search .carousel-item {
+    height: 400px;
+}
+
+.main-search .carousel-item>img {
+    height: 100%;
+}
+
+.main-search .carousel-item>.carousel-caption {
+    top: 40%;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    font-size: 75px;
+}
+
+.main-search .carousel-item>.carousel-caption>h3 {
+    font-size: inherit;
+}
