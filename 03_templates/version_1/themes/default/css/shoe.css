@@ -1,11 +1,14 @@
-a,btn{
+a,
+btn {
     cursor: pointer;
 }
+
 .main-search {
     height: 400px;
     white-space: -20px;
 }
-.main-search:before{
+
+.main-search:before {
     content: "";
     display: inline-block;
     height: 100%;
@@ -13,8 +16,10 @@ a,btn{
 }
 
 .main-search-box {
+    position: relative;
     display: inline-block;
-    width: 95%;
+    margin-right: -2%;
+    width: 99%;
     text-align: center;
     z-index: 20;
     vertical-align: middle;
@@ -55,6 +60,7 @@ a,btn{
 .main-search>.carousel-indicators li * {
     color: white;
 }
+
 .main-search .carousel-item>img {
     height: 100%;
 }
@@ -71,16 +77,30 @@ a,btn{
     font-size: inherit;
 }
 
-.main-search > .carousel-inner{
+.main-search>.carousel-inner {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 400px;
+    text-align: center;
+    background-color: #101f26;
 }
-.main-search  .carousel-caption{
+
+.main-search .carousel-caption {
     display: none!important;
 }
-.main-search-title{
+
+.main-search-title {
     color: white;
+}
+
+.main-search-enter {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.main-search-enter .form-control {
+    flex-grow: 1;
 }
