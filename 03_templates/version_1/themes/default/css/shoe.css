@@ -1,5 +1,13 @@
+div,p,span,ul,li,table,td,tr,tbody,thead,strong,sup,img{
+    font-size: inherit;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+}
 a,
-btn {
+button,
+.btn {
     cursor: pointer;
 }
 
@@ -103,4 +111,57 @@ btn {
 
 .main-search-enter .form-control {
     flex-grow: 1;
+}
+/* MODAL ENTRANCE */
+.modal-entrance{}
+.modal-entrance .modal-header{
+    background-color: #00BBE2;
+}
+.modal-entrance .modal-header *{
+    color: white;
+}
+.modal-entrance .modal-title{
+    text-transform: uppercase;
+}
+.modal-entrance .tab-pane{
+    padding: 20px;
+}
+/* SHOW BOX */
+.show-box{
+    margin-top: 50px;
+}
+.show-box-title:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.show-box-title{
+    padding: 10px 0 5px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+}
+/* PRICE */
+.price > * + *{
+    margin-top: 5px;
+}
+.price-label{
+    font-size: 12px;
+}
+.price-current{
+    font-size: 22px;
+    line-height: 24px;
+}
+/* :START ITEM */
+.item{}
+.item > * + *{
+    margin-top: 5px;
+}
+.item-img img{
+    max-width: 95%;
+}
+.item-name{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
 }
