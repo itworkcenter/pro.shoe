@@ -13,12 +13,18 @@
 function (win, doc, $) {
     // MOBILE NAV 
     win.closeNav = function () {
-        $(".navbar-collapse").removeClass("show");
+
+        $(".navbar-toggler").click();
     }
     $(".navbar-toggle-close").click(function () {
         closeNav();
     });
-    $(doc).on("click", function () {
-        closeNav();
+    $(doc).on("click", function (e) {
+        var $navClaps = $(".navbar-collapse"),
+            admiss = $(e.target).closest(".navbar-collapse").size();
+
+        if (!admiss && $navClaps.hasClass("show")) {
+            closeNav();
+        }
     })
 }(window, document, jQuery)

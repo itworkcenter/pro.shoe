@@ -217,13 +217,13 @@ a:hover{
     padding: 0 10px;
     color: white;
 }
-.navbar-collapse.collapsing{
+.navbar-collapse.collapse{
     width: 80%;
-    height: 100%;
-    -webkit-transition: width .3s ease;
-    -moz-transition: width .3s ease;
-    -o-transition: width .3s ease;
-    transition: width .3s ease;
+    height: 100%!important;
+    -webkit-transition: width .35s ease;
+    -moz-transition: width .35s ease;
+    -o-transition: width .35s ease;
+    transition: width .35s ease;
 }
 @media (max-width: 768px){
     .navbar-brand{
@@ -250,8 +250,6 @@ a:hover{
     
     .navbar-collapse.collapse.show{
         width: 80%;
-        height: 100%;
-        
     }
     .navbar-collapse.collapse .nav-link{
         color: #222!important;
