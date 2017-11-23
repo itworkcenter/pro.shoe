@@ -197,3 +197,66 @@ a:hover{
 .list-link > li + li{
     border-left: 1px solid #666;
 }
+/* NAVBAR */
+.navbar-brand{
+    font-weight: bold;
+}
+.navbar-header{
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #41ad33;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navbar-toggle-close:hover,
+.navbar-toggle-close{
+    font-size: 24px;
+    padding: 0 10px;
+    color: white;
+}
+.navbar-collapse.collapsing{
+    width: 80%;
+    height: 100%;
+    -webkit-transition: width .3s ease;
+    -moz-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+}
+@media (max-width: 768px){
+    .navbar-brand{
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar-header{
+        display: flex;
+    }
+    .navbar-collapse{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 100%!important;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: white;
+        box-shadow: 0 17px 31px -2px #000;
+        color: #222;
+        
+    }
+    
+    .navbar-collapse.collapse.show{
+        width: 80%;
+        height: 100%;
+        
+    }
+    .navbar-collapse.collapse .nav-link{
+        color: #222!important;
+    }
+    .navbar-collapse > .navbar-nav > .nav-item {
+        padding: 0 15px;
+    }
+}

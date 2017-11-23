@@ -15,12 +15,17 @@
   <!-- :START HEADER -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top pull-right">
-      <a class="navbar-brand" href="#">Shoe</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">ShoeX</a>
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-header">
+          <span>ShoeX</span>
+          <button class="btn btn-link navbar-toggle-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -39,9 +44,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">FAQ</a>
-                <a class="dropdown-item" href="#">Reviews</a>
-              </div>
+              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item" href="#">Reviews</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#popEntrance">Login/Sign Up</a>
@@ -278,9 +283,15 @@
   <footer class="footer">
     <div class="container">
       <ul class="list-inline list-link">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Contact</a></li>
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Contact</a>
+        </li>
       </ul>
       <div class="text-white">©2017 StockX. All Rights Reserved.</div>
     </div>
@@ -381,12 +392,4 @@
 <script src="themes/default/js/popper.js"></script>
 <script src="themes/default/js/bootstrap.js"></script>
 <script src="themes/default/js/bootstrap.extend.js"></script>
-<script>
-  $("#mainSearchTitle").html($(".carousel-item.active .carousel-caption").html());
-  $("#mainSearchBanner").on("slide.bs.carousel", function () {
-    var api = $(this).data("bs.carousel"),
-      $curr = $(".carousel-caption", api._activeElement);
-
-    $("#mainSearchTitle").html($curr.html())
-  })
-</script>
+<script src="themes/default/js/shoe.js"></script>
