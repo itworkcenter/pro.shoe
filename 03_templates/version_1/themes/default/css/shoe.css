@@ -34,6 +34,30 @@ a:hover {
     color: #06f;
 }
 
+
+/* :START MODULE */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1020;
+    cursor: pointer;
+}
+
+#overlay.open {
+    display: block;
+}
+
+
+/* :END MODULE */
+
 .main-search {
     height: 400px;
     white-space: -20px;
@@ -248,6 +272,25 @@ a:hover {
 
 /* NAVBAR */
 
+.navbar-floating {
+    background-color: #f8f9fa!important;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-floating .navbar-nav .active>.nav-link,
+.navbar-floating .navbar-nav .nav-link.active,
+.navbar-floating .navbar-nav .nav-link.show,
+.navbar-floating .navbar-nav .show>.nav-link,
+.navbar-floating .navbar-nav .nav-link,
+.navbar-floating .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, .9);
+}
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -269,6 +312,7 @@ a:hover {
     padding: 0 10px;
     color: white;
 }
+
 @media (max-width: 768px) {
     /* :STATT OVERRIDE COLLAPSE */
     .collapsing.width {
@@ -276,7 +320,7 @@ a:hover {
         height: auto;
         transition-property: width;
     }
-    .navbar-collapse .navbar-nav{
+    .navbar-collapse .navbar-nav {
         width: 300px;
         max-width: 300px;
     }
