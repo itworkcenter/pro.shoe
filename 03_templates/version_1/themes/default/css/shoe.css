@@ -1,20 +1,36 @@
-div,p,span,ul,li,table,td,tr,tbody,thead,strong,sup,img,a{
+div,
+p,
+span,
+ul,
+li,
+table,
+td,
+tr,
+tbody,
+thead,
+strong,
+sup,
+img,
+a {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 16px;
     font-weight: 100;
     color: #222;
 }
+
 a,
 button,
 .btn {
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     color: #06f;
 }
 
@@ -120,88 +136,123 @@ a:hover{
 .main-search-enter .input-group {
     flex-grow: 1;
 }
+
+
 /* MODAL ENTRANCE */
-.modal-entrance{}
-.modal-entrance .modal-header{
+
+.modal-entrance {}
+
+.modal-entrance .modal-header {
     background-color: #00BBE2;
 }
-.modal-entrance .modal-header *{
+
+.modal-entrance .modal-header * {
     color: white;
 }
-.modal-entrance .modal-title{
+
+.modal-entrance .modal-title {
     text-transform: uppercase;
 }
-.modal-entrance .tab-pane{
+
+.modal-entrance .tab-pane {
     padding: 20px;
 }
+
+
 /* SHOW BOX */
-.show-box{
+
+.show-box {
     margin-top: 50px;
 }
-.show-box-title:after{
+
+.show-box-title:after {
     content: "";
     display: table;
     clear: both;
 }
-.show-box-title{
+
+.show-box-title {
     padding: 10px 0 5px 0;
     font-size: 24px;
     text-transform: uppercase;
     border-bottom: 1px solid #eee;
 }
+
+
 /* PRICE */
-.price > * + *{
+
+.price>*+* {
     margin-top: 5px;
 }
-.price-label{
+
+.price-label {
     font-size: 12px;
 }
-.price-current{
+
+.price-current {
     font-size: 22px;
     font-weight: bold;
     line-height: 24px;
 }
+
+
 /* :START ITEM */
-.item{}
-.item > * + *{
+
+.item {}
+
+.item>*+* {
     margin-top: 5px;
 }
-.item-img img{
+
+.item-img img {
     max-width: 95%;
 }
-.item-name{
+
+.item-name {
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
 }
+
+
 /* :START FOOTER */
-.footer{
+
+.footer {
     margin-top: 30px;
     background-color: #222;
 }
-.footer *{
+
+.footer * {
     color: #999!important;
 }
-.footer > .container{
+
+.footer>.container {
     padding: 30px;
 }
-.footer .list-link a{
+
+.footer .list-link a {
     color: white;
     font-weight: 100;
 }
-.list-link > li{
+
+.list-link>li {
     padding: 0 5px;
     margin: 0!important;
 }
-.list-link > li + li{
+
+.list-link>li+li {
     border-left: 1px solid #666;
 }
+
+
 /* NAVBAR */
-.navbar-brand{
+
+.navbar-brand {
     font-weight: bold;
 }
-.navbar-header{
+
+.navbar-header {
     display: none;
     padding: 10px;
     margin-bottom: 10px;
@@ -211,50 +262,48 @@ a:hover{
     align-items: center;
     color: white;
 }
+
 .navbar-toggle-close:hover,
-.navbar-toggle-close{
+.navbar-toggle-close {
     font-size: 24px;
     padding: 0 10px;
     color: white;
 }
-.navbar-collapse.collapse{
-    width: 80%;
-    height: 100%!important;
-    -webkit-transition: width .35s ease;
-    -moz-transition: width .35s ease;
-    -o-transition: width .35s ease;
-    transition: width .35s ease;
-}
-@media (max-width: 768px){
-    .navbar-brand{
+@media (max-width: 768px) {
+    /* :STATT OVERRIDE COLLAPSE */
+    .collapsing.width {
+        width: 0;
+        height: auto;
+        transition-property: width;
+    }
+    .navbar-collapse .navbar-nav{
+        width: 300px;
+        max-width: 300px;
+    }
+    /* :END OVERRIDE COLLAPSE */
+    .navbar-brand {
         display: block;
         margin: 0 auto;
     }
-    .navbar-header{
+    .navbar-header {
         display: flex;
     }
-    .navbar-collapse{
+    .navbar-collapse {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
-        width: 0;
-        height: 100%!important;
+        width: auto;
         overflow: hidden;
         overflow-y: auto;
         background-color: white;
         box-shadow: 0 17px 31px -2px #000;
         color: #222;
-        
     }
-    
-    .navbar-collapse.collapse.show{
-        width: 80%;
-    }
-    .navbar-collapse.collapse .nav-link{
+    .navbar-collapse.collapse .nav-link {
         color: #222!important;
     }
-    .navbar-collapse > .navbar-nav > .nav-item {
+    .navbar-collapse>.navbar-nav>.nav-item {
         padding: 0 15px;
     }
 }
