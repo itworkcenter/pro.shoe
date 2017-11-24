@@ -27,4 +27,33 @@ function (win, doc, $) {
             closeNav();
         }
     })
+    $('.navbar-collapse').on('show.bs.collapse', function () {
+        $("#overlay").addClass("open");
+    })
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        $("#overlay").removeClass("open");
+    })
+    // WINDOW SCROLL ENTRANCE
+    function fixedNav() {
+        var top = $(win).scrollTop(),
+            floatCls = "navbar-floating",
+            $nav = $("nav");
+
+        if (top) {
+            if (!$nav.hasClass(floatCls)) {
+                $nav.addClass(floatCls);
+            }
+        } else {
+            if ($nav.hasClass(floatCls)) {
+                $nav.removeClass(floatCls);
+            }
+        }
+    }
+    $(win)
+        .scroll(function () {
+            fixedNav();
+        })
+        .resize(function () {
+            fixedNav();
+        })
 }(window, document, jQuery)
