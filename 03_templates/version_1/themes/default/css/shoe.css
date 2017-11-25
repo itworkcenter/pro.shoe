@@ -12,10 +12,13 @@ strong,
 sup,
 img,
 a {
+    margin: 0;
+    padding: 0;
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -51,7 +54,7 @@ a:hover {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1020;
+    z-index: 1010;
     cursor: pointer;
 }
 
@@ -213,12 +216,22 @@ main{
 }
 
 .show-box-title {
-    padding: 10px 0 5px 0;
     font-size: 24px;
     text-transform: uppercase;
     border-bottom: 1px solid #eee;
 }
-
+.show-box-title > sup{
+    font-size: 18px;
+    cursor: pointer;
+}
+.show-box-title > .icon{
+    color: rgb(255, 123, 0);
+}
+.show-box-title > .view-more{
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: 100;
+}
 
 /* PRICE */
 
@@ -259,8 +272,24 @@ main{
     text-transform: uppercase;
     font-family: 'Pragati Narrow', sans-serif;
 }
-
-
+/* :CATEGORY */
+.category.collapse{
+    display: block;
+}
+.category-title{
+    height: 40px;
+    font-size: 18px;
+}
+.category-toggle{
+    position: fixed;
+    left: 10px;
+    top: 120px;
+    z-index: 1020;
+}
+.category-toggle-close{
+    padding: 0 15px;
+    font-size: 24px;
+}
 /* :START FOOTER */
 
 .footer {
@@ -362,10 +391,44 @@ main{
     margin-top: 50px;
 }
 
-/* :START LIST PAGE */
-
+/* MOBILE/WEB */
+.only-mobile{
+    display: none;
+}
+.only-web{
+    display: block;
+}
 
 @media (max-width: 768px) {
+    .only-mobile{
+        display: block;
+    }
+    .only-web{
+        display: none;
+    }
+    .category{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 160px 15px 15px 15px;
+        background-color: #f8f9fa!important;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+        z-index: 1020;
+    }
+    .category-title{
+        width: 300px;
+    }
+    .category.collapse{
+        display: none;
+        width: 0;
+        overflow: hidden;
+    }
+    .category.collapse.show{
+        display: block;
+        width: auto;
+        overflow: hidden;
+    }
     /* :STATT OVERRIDE COLLAPSE */
     .collapsing.width {
         width: 0;
@@ -377,6 +440,9 @@ main{
         max-width: 300px;
     }
     /* :END OVERRIDE COLLAPSE */
+    .page-side{
+        
+    }
 
     .navbar .navbar-toggler{
         font-size: 2rem;

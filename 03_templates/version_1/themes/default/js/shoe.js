@@ -57,3 +57,19 @@ function (win, doc, $) {
             fixedNav();
         })
 }(window, document, jQuery)
++
+function (win, doc, $) {
+    // MOBILE CATEGORY 
+    win.closeCate= function () {
+        $(".category-toggle").click();
+    }
+    $(".category-toggle-close").click(function () {
+        closeCate();
+    });
+    $('.category.collapse').on('show.bs.collapse', function () {
+        $("#overlay").addClass("open");
+    })
+    $('.category.collapse').on('hidden.bs.collapse', function () {
+        $("#overlay").removeClass("open");
+    })
+}(window, document, jQuery)
