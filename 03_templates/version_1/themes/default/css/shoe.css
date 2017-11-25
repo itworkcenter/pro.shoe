@@ -355,6 +355,9 @@ main{
 .navbar-single .navbar-collapse{
     flex-grow: inherit;
 }
+.pagination{
+    margin-top: 50px;
+}
 
 /* :START LIST PAGE */
 
