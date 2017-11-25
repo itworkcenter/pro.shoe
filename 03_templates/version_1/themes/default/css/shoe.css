@@ -36,6 +36,9 @@ a:hover {
 
 
 /* :START MODULE */
+.bg-red {
+    background-color: #ff5a5f!important;
+}
 
 #overlay {
     position: fixed;
@@ -57,10 +60,17 @@ a:hover {
 
 
 /* :END MODULE */
+main{
+    margin-top: 100px;
+}
 
 .main-search {
     height: 400px;
     white-space: -20px;
+}
+
+.main-search + .main{
+    margin-top: 0;
 }
 
 .main-search:before {
@@ -167,24 +177,24 @@ a:hover {
     margin: 0 auto;
 }
 
-
 /* MODAL ENTRANCE */
 
-.modal-entrance {}
-
-.modal-entrance .modal-header {
+.modal-header {
+    padding: 5px 15px;
     background-color: #00BBE2;
 }
 
-.modal-entrance .modal-header * {
+.modal-header * {
     color: white;
 }
 
-.modal-entrance .modal-title {
+.modal-title {
     text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Pragati Narrow', sans-serif;
 }
 
-.modal-entrance .tab-pane {
+.modal .tab-pane {
     padding: 20px;
 }
 
@@ -286,7 +296,7 @@ a:hover {
 }
 .navbar-floating {
     background-color: #f8f9fa!important;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
 }
 .navbar-floating .navbar-toggler,
 .navbar-floating .navbar-nav .active>.nav-link,
@@ -295,11 +305,6 @@ a:hover {
 .navbar-floating .navbar-nav .show>.nav-link,
 .navbar-floating .navbar-nav .nav-link,
 .navbar-floating .navbar-brand {
-    color: rgba(0, 0, 0, .9);
-}
-
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, .9);
 }
 
@@ -324,6 +329,31 @@ a:hover {
     padding: 0 10px;
     color: white;
 }
+.navbar-single {
+    background-color: #f8f9fa!important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+}
+.navbar-single .navbar-toggler,
+.navbar-single .navbar-nav .active>.nav-link,
+.navbar-single .navbar-nav .nav-link.active,
+.navbar-single .navbar-nav .nav-link.show,
+.navbar-single .navbar-nav .show>.nav-link,
+.navbar-single .navbar-nav .nav-link,
+.navbar-single .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+}
+.navbar-single .navbar-search{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.navbar-single .navbar-collapse{
+    flex-grow: inherit;
+}
+
+/* :START LIST PAGE */
+
 
 @media (max-width: 768px) {
     /* :STATT OVERRIDE COLLAPSE */
@@ -337,9 +367,14 @@ a:hover {
         max-width: 300px;
     }
     /* :END OVERRIDE COLLAPSE */
+
+    .navbar .navbar-toggler{
+        font-size: 2rem;
+    }
     .navbar-brand {
         display: block;
         margin: 0 auto;
+        font-size: 2rem;
     }
     .navbar-header {
         display: flex;

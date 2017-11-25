@@ -12,15 +12,23 @@
   <link rel="stylesheet" href="themes/default/css/shoe.css">
 </head>
 
-<body>
+<body class="list">
   <!-- :START HEADER -->
   <header>
-    <nav class="navbar navbar-expand-md fixed-top pull-right">
+    <nav class="navbar navbar-expand-md fixed-top pull-right navbar-single">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <a class="navbar-brand" href="index.html">ShoeX</a>
+      <div class="input-group ml-2 mr-2 navbar-search">
+          <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </span>
+        </div>
 
       <div class="collapse navbar-collapse width" id="navbarCollapse">
         <div class="navbar-header">
@@ -62,52 +70,6 @@
     </nav>
   </header>
   <!-- :END HEADER -->
-  <!-- :START MAIN SEARCH -->
-  <div id="mainSearchBanner" class="carousel slide main-search" data-ride="carousel">
-      <div class="main-search-box">
-        <h1 id="mainSearchTitle" class="main-search-title"></h1>
-        <div class="main-search-enter">
-          <form class="form-inline mt-2 mt-md-0">
-            <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc."> -->
-            <div class="input-group input-group-lg mr-sm-2">
-              <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </span>
-            </div>
-            <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit">Browser</button>
-          </form>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#mainSearchBanner" data-slide-to="0" class="active">
-          <strong>Sneakers</strong>
-        </li>
-        <li data-target="#mainSearchBanner" data-slide-to="1">
-          <strong>Streetwear</strong>
-        </li>
-        <li data-target="#mainSearchBanner" data-slide-to="2">
-          <strong>Watch</strong>
-        </li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="files/imgs/bg-search-banner.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC STREETWEAR</div>
-        </div>
-        <div class="carousel-item">
-          <img src="files/imgs/bg-search-banner-1.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Streetwear</div>
-        </div>
-        <div class="carousel-item">
-          <img src="files/imgs/bg-search-banner-2.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Watch</div>
-        </div>
-      </div>
-    </div>
-    <!-- :END MAIN SEARCH -->
   <main>
     <div class="container">
       <div class="show-box">
