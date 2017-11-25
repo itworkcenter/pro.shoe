@@ -1,72 +1,59 @@
 + function (win, doc, $) {
-  // DROPDOWN HOVER
-  var Selector = {
-    DROPDOWN: ".dropdown"
-  };
-  var Event = {
-    SHOW: "hide.bs.dropdown"
-  };
+    // MAIN SEARCH
+    $("#mainSearchTitle").html($(".carousel-item.active .carousel-caption").html());
+    $("#mainSearchBanner").on("slide.bs.carousel", function () {
+        var api = $(this).data("bs.carousel"),
+            $curr = $(".carousel-caption", api._activeElement);
 
-  function api(obj) {
-    return obj.data("bs.dropdown");
-  }
+        $("#mainSearchTitle").html($curr.html())
+    })
+}(window, document, jQuery)
 
-  function triggerClick(obj) {
-    obj.dropdown();
++
+function (win, doc, $) {
+    // MOBILE NAV 
+    win.closeNav = function () {
 
-    var api_ = api(obj),
-      cfg = api_._config;
-
-    if (!cfg.hover) {
-      api_.dispose();
-    } else {
-      api_.toggle();
+        $(".navbar-toggler").click();
     }
-  }
+    $(".navbar-toggle-close").click(function () {
+        closeNav();
+    });
+    $(doc).on("click", function (e) {
+        var $navClaps = $(".navbar-collapse"),
+            admiss = $(e.target).closest(".navbar-collapse").size();
 
-  function downhover($toggle) {
-    var api_ = api($toggle);
+        if (!admiss && $navClaps.hasClass("show")) {
+            closeNav();
+        }
+    })
+    $('.navbar-collapse').on('show.bs.collapse', function () {
+        $("#overlay").addClass("open");
+    })
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        $("#overlay").removeClass("open");
+    })
+    // WINDOW SCROLL ENTRANCE
+    function fixedNav() {
+        var top = $(win).scrollTop(),
+            floatCls = "navbar-floating",
+            $nav = $("nav");
 
-    if (api_) {
-      var cfg = api_._config
-      if (cfg.hover) {
-        api_.toggle();
-      }
-    } else {
-      triggerClick($toggle);
+        if (top) {
+            if (!$nav.hasClass(floatCls)) {
+                $nav.addClass(floatCls);
+            }
+        } else {
+            if ($nav.hasClass(floatCls)) {
+                $nav.removeClass(floatCls);
+            }
+        }
     }
-  }
-
-  function getToggle(e) {
-    var $obj = $(e.target),
-    dd = $obj.hasClass("dropdown-menu") ? $obj.siblings(".dropdown-toggle") : $obj;
-    return dd;
-  }
-
-  function eventDownEnter(e) {
-    downhover(getToggle(e));
-  }
-
-  function eventDownLeave(a) {
-    // var $t = getToggle(a);
-
-    // api($t).sett = setTimeout(function () {
-    //   downhover($t);
-    // }, 150);
-  }
-
-  function eventMenuDownEnter(a) {
-    // clearTimeout(api(getToggle(a)).sett);
-  }
-
-  function eventMenuDownLeave(a) {
-    downhover(getToggle(a));
-  }
-
-  $(doc)
-    .on("mouseenter", ".dropdown-toggle", eventDownEnter)
-    .on("mouseleave", ".dropdown-toggle", eventDownLeave)
-    .on("mouseenter", ".dropdown-menu", eventMenuDownEnter)
-    .on("mouseleave", ".dropdown-menu", eventMenuDownLeave);
-
-}(window, document, $)
+    $(win)
+        .scroll(function () {
+            fixedNav();
+        })
+        .resize(function () {
+            fixedNav();
+        })
+}(window, document, jQuery)
