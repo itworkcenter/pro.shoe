@@ -271,12 +271,17 @@ a:hover {
 
 
 /* NAVBAR */
+.navbar .navbar-toggler,
+.navbar .navbar-brand,
+.navbar .nav-link{
+    color: white;
 
+}
 .navbar-floating {
     background-color: #f8f9fa!important;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
-
+.navbar-floating .navbar-toggler,
 .navbar-floating .navbar-nav .active>.nav-link,
 .navbar-floating .navbar-nav .nav-link.active,
 .navbar-floating .navbar-nav .nav-link.show,
