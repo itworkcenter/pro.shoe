@@ -398,7 +398,19 @@ main{
 .only-web{
     display: block;
 }
+/* PRODUCT DETAIL */
+.product-title{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+.product-info {
 
+}
+.product-media img{
+    max-width: 100%;
+
+}
 @media (max-width: 768px) {
     .only-mobile{
         display: block;
