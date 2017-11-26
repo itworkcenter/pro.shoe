@@ -184,7 +184,29 @@
                   Size 10.5
                 </li>
                 <li class="list-inline-item">
-                  <a href="javascript:;" data-toggle="modal" data-target="#viewAllSales">View All Ask</a>
+                  <a href="javascript:;" data-toggle="modal" data-target="#viewAllAsks">View All Asks</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-submit">
+            <button type="button" class=" submit-button btn btn-danger">
+              <div class="submit-button-cell">
+                <div class="title">$100</div>
+                <div class="title-info">Lowest Ask</div>
+              </div>
+              <div class="submit-button-cell">
+                <div class="title">Buy</div>
+                <div class="title-info">or Bid</div>
+              </div>
+            </button>
+            <div class="last-sale text-center">
+              <ul class="list-inline list-link">
+                <li class="list-inline-item">
+                  Size 10.5
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:;" data-toggle="modal" data-target="#viewAllBids">View All Bids</a>
                 </li>
               </ul>
             </div>
@@ -422,6 +444,124 @@
     </div>
   </div>
   <!-- :END VIEW ALL SALES -->
+  <!-- :START VIEW ALL ASKS -->
+  <div id="viewAllAsks" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">All Asks</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="product-history">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Size</th>
+                  <th scope="col">Ask Price</th>
+                  <th scope="col"># Available</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- :END VIEW ALL ASKS -->
+  <!-- :START VIEW ALL BIDS -->
+  <div id="viewAllBids" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">All Bids</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="product-history">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Size</th>
+                  <th scope="col">Bids Price</th>
+                  <th scope="col"># Available</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>$1599</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- :END VIEW ALL BIDS -->
   <!-- :START OVERLAY -->
   <div id="overlay"></div>
 </body>
