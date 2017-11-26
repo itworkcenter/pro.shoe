@@ -40,6 +40,7 @@ a:hover {
 
 
 /* :START MODULE */
+
 .bg-red {
     background-color: #ff5a5f!important;
 }
@@ -64,7 +65,8 @@ a:hover {
 
 
 /* :END MODULE */
-main{
+
+main {
     margin-top: 100px;
 }
 
@@ -73,7 +75,7 @@ main{
     white-space: -20px;
 }
 
-.main-search + .main{
+.main-search+.main {
     margin-top: 0;
 }
 
@@ -177,9 +179,11 @@ main{
 .main-search-enter .input-group {
     flex-grow: 1;
 }
+
 .main-search-enter .btn {
     margin: 0 auto;
 }
+
 
 /* MODAL ENTRANCE */
 
@@ -220,18 +224,22 @@ main{
     text-transform: uppercase;
     border-bottom: 1px solid #eee;
 }
-.show-box-title > sup{
+
+.show-box-title>sup {
     font-size: 18px;
     cursor: pointer;
 }
-.show-box-title > .icon{
+
+.show-box-title>.icon {
     color: rgb(255, 123, 0);
 }
-.show-box-title > .view-more{
+
+.show-box-title>.view-more {
     margin-top: 6px;
     font-size: 15px;
     font-weight: 100;
 }
+
 
 /* PRICE */
 
@@ -252,7 +260,7 @@ main{
 
 /* :START ITEM */
 
-.item > a:hover{
+.item>a:hover {
     color: inherit;
     text-decoration: none;
 }
@@ -272,24 +280,32 @@ main{
     text-transform: uppercase;
     font-family: 'Pragati Narrow', sans-serif;
 }
+
+
 /* :CATEGORY */
-.category.collapse{
+
+.category.collapse {
     display: block;
 }
-.category-title{
+
+.category-title {
     height: 40px;
     font-size: 18px;
 }
-.category-toggle{
+
+.category-toggle {
     position: fixed;
     left: 10px;
     top: 120px;
     z-index: 1020;
 }
-.category-toggle-close{
+
+.category-toggle-close {
     padding: 0 15px;
     font-size: 24px;
 }
+
+
 /* :START FOOTER */
 
 .footer {
@@ -323,17 +339,28 @@ main{
 }
 
 
-/* NAVBAR */
+/* HEADER */
+
+header>.alert {
+    margin: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    width: 100%;
+}
+
 .navbar .navbar-toggler,
 .navbar .navbar-brand,
-.navbar .nav-link{
+.navbar .nav-link {
     color: white;
-
 }
+
 .navbar-floating {
     background-color: #f8f9fa!important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
 }
+
 .navbar-floating .navbar-toggler,
 .navbar-floating .navbar-nav .active>.nav-link,
 .navbar-floating .navbar-nav .nav-link.active,
@@ -365,10 +392,12 @@ main{
     padding: 0 10px;
     color: white;
 }
+
 .navbar-single {
     background-color: #f8f9fa!important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
 }
+
 .navbar-single .navbar-toggler,
 .navbar-single .navbar-nav .active>.nav-link,
 .navbar-single .navbar-nav .nav-link.active,
@@ -378,47 +407,56 @@ main{
 .navbar-single .navbar-brand {
     color: rgba(0, 0, 0, .9);
 }
-.navbar-single .navbar-search{
+
+.navbar-single .navbar-search {
     display: flex;
     width: auto;
     justify-content: space-between;
     flex-grow: 1;
 }
-.navbar-single .navbar-collapse{
+
+.navbar-single .navbar-collapse {
     flex-grow: inherit;
 }
-.pagination{
+
+.pagination {
     margin-top: 50px;
 }
 
+
 /* MOBILE/WEB */
-.only-mobile{
+
+.only-mobile {
     display: none;
 }
-.only-web{
+
+.only-web {
     display: block;
 }
+
+
 /* PRODUCT DETAIL */
-.product-title{
+
+.product-title {
     font-size: 50px;
     font-weight: bold;
     font-family: 'Pragati Narrow', sans-serif;
 }
-.product-info {
 
-}
-.product-media img{
+.product-info {}
+
+.product-media img {
     max-width: 100%;
-
 }
+
 @media (max-width: 768px) {
-    .only-mobile{
+    .only-mobile {
         display: block;
     }
-    .only-web{
+    .only-web {
         display: none;
     }
-    .category{
+    .category {
         position: fixed;
         top: 0;
         left: 0;
@@ -428,15 +466,15 @@ main{
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
         z-index: 1020;
     }
-    .category-title{
+    .category-title {
         width: 300px;
     }
-    .category.collapse{
+    .category.collapse {
         display: none;
         width: 0;
         overflow: hidden;
     }
-    .category.collapse.show{
+    .category.collapse.show {
         display: block;
         width: auto;
         overflow: hidden;
@@ -452,11 +490,8 @@ main{
         max-width: 300px;
     }
     /* :END OVERRIDE COLLAPSE */
-    .page-side{
-        
-    }
-
-    .navbar .navbar-toggler{
+    .page-side {}
+    .navbar .navbar-toggler {
         font-size: 2rem;
     }
     .navbar-brand {
@@ -486,7 +521,7 @@ main{
     .navbar-collapse>.navbar-nav>.nav-item {
         padding: 0 15px;
     }
-    .navbar .dropdown-menu{
+    .navbar .dropdown-menu {
         display: none!important;
     }
 }

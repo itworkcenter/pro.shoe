@@ -14,8 +14,14 @@
 
 <body>
   <!-- :START HEADER -->
-  <header>
-    <nav class="navbar navbar-expand-md fixed-top pull-right">
+  <header class="fixed-top">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <nav class="navbar navbar-expand-md  pull-right">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -64,244 +70,266 @@
   <!-- :END HEADER -->
   <!-- :START MAIN SEARCH -->
   <div id="mainSearchBanner" class="carousel slide main-search" data-ride="carousel">
-      <div class="main-search-box">
-        <h1 id="mainSearchTitle" class="main-search-title"></h1>
-        <div class="main-search-enter">
-          <form class="form-inline mt-2 mt-md-0">
-            <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc."> -->
-            <div class="input-group input-group-lg mr-sm-2">
-              <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </span>
-            </div>
-            <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit">Browser</button>
-          </form>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#mainSearchBanner" data-slide-to="0" class="active">
-          <strong>Sneakers</strong>
-        </li>
-        <li data-target="#mainSearchBanner" data-slide-to="1">
-          <strong>Streetwear</strong>
-        </li>
-        <li data-target="#mainSearchBanner" data-slide-to="2">
-          <strong>Watch</strong>
-        </li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="files/imgs/bg-search-banner.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC STREETWEAR</div>
-        </div>
-        <div class="carousel-item">
-          <img src="files/imgs/bg-search-banner-1.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Streetwear</div>
-        </div>
-        <div class="carousel-item">
-          <img src="files/imgs/bg-search-banner-2.jpg" alt="shoe">
-          <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Watch</div>
-        </div>
+    <div class="main-search-box">
+      <h1 id="mainSearchTitle" class="main-search-title"></h1>
+      <div class="main-search-enter">
+        <form class="form-inline mt-2 mt-md-0">
+          <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc."> -->
+          <div class="input-group input-group-lg mr-sm-2">
+            <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </span>
+          </div>
+          <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit">Browser</button>
+        </form>
       </div>
     </div>
-    <!-- :END MAIN SEARCH -->
+    <ol class="carousel-indicators">
+      <li data-target="#mainSearchBanner" data-slide-to="0" class="active">
+        <strong>Sneakers</strong>
+      </li>
+      <li data-target="#mainSearchBanner" data-slide-to="1">
+        <strong>Streetwear</strong>
+      </li>
+      <li data-target="#mainSearchBanner" data-slide-to="2">
+        <strong>Watch</strong>
+      </li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="files/imgs/bg-search-banner.jpg" alt="shoe">
+        <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC STREETWEAR</div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/imgs/bg-search-banner-1.jpg" alt="shoe">
+        <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Streetwear</div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/imgs/bg-search-banner-2.jpg" alt="shoe">
+        <div class="carousel-caption d-none d-md-block">BUY AND SELL AUTHENTIC Watch</div>
+      </div>
+    </div>
+  </div>
+  <!-- :END MAIN SEARCH -->
   <main>
     <div class="container">
       <div class="show-box">
-        <h3 class="show-box-title"><span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span> <span>Most Popular</span> <sup><i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="The 'Most Popular'"></i></sup> <div class="view-more pull-right"><a href="list.html">See All</a></div></h3>
+        <h3 class="show-box-title">
+          <span class="icon">
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </span>
+          <span>Most Popular</span>
+          <sup>
+            <i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="The 'Most Popular'"></i>
+          </sup>
+          <div class="view-more pull-right">
+            <a href="list.html">See All</a>
+          </div>
+        </h3>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="item">
-                  <a href="detail.html">
-                    <div class="item-img">
-                      <span class="helper"></span>
-                      <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                    </div>
-                    <div class="item-name">
-                      <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
 
-                    </div>
-                    <div class="item-price">
-                      <div class="price">
-                        <div class="price-label">LOWEST ASK</div>
-                        <div class="price-current">$799.00</div>
-                      </div>
-                    </div>
-                    <div class="item-sold">
-                      <span>572 sold</span>
-                    </div>
-                  </a>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-xs-6">
-                  <div class="item">
-                    <a href="detail.html">
-                      <div class="item-img">
-                        <span class="helper"></span>
-                        <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                      </div>
-                      <div class="item-name">
-                        <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
-  
-                      </div>
-                      <div class="item-price">
-                        <div class="price">
-                          <div class="price-label">LOWEST ASK</div>
-                          <div class="price-current">$799.00</div>
-                        </div>
-                      </div>
-                      <div class="item-sold">
-                        <span>572 sold</span>
-                      </div>
-                    </a>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
                   </div>
                 </div>
-              <div class="col-lg-3 col-md-4 col-xs-6">
-                  <div class="item">
-                    <a href="detail.html">
-                      <div class="item-img">
-                        <span class="helper"></span>
-                        <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                      </div>
-                      <div class="item-name">
-                        <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
-  
-                      </div>
-                      <div class="item-price">
-                        <div class="price">
-                          <div class="price-label">LOWEST ASK</div>
-                          <div class="price-current">$799.00</div>
-                        </div>
-                      </div>
-                      <div class="item-sold">
-                        <span>572 sold</span>
-                      </div>
-                    </a>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+
+                </div>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
                   </div>
                 </div>
-              <div class="col-lg-3 col-md-4 col-xs-6">
-                  <div class="item">
-                    <a href="detail.html">
-                      <div class="item-img">
-                        <span class="helper"></span>
-                        <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                      </div>
-                      <div class="item-name">
-                        <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
-  
-                      </div>
-                      <div class="item-price">
-                        <div class="price">
-                          <div class="price-label">LOWEST ASK</div>
-                          <div class="price-current">$799.00</div>
-                        </div>
-                      </div>
-                      <div class="item-sold">
-                        <span>572 sold</span>
-                      </div>
-                    </a>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+
+                </div>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
                   </div>
                 </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+
+                </div>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
+                  </div>
+                </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="show-box">
-        <h3 class="show-box-title"><span class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span> <span>NEW LOWEST ASKS</span> <sup><i class="fa fa-question-circle" aria-hidden="true"></i></sup> <div class="view-more pull-right"><a href="list.html">See All</a></div></h3>
+        <h3 class="show-box-title">
+          <span class="icon">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </span>
+          <span>NEW LOWEST ASKS</span>
+          <sup>
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+          </sup>
+          <div class="view-more pull-right">
+            <a href="list.html">See All</a>
+          </div>
+        </h3>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="item">
-                  <a href="detail.html">
-                    <div class="item-img">
-                      <span class="helper"></span>
-                      <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                    </div>
-                    <div class="item-name">
-                      <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
-
-                    </div>
-                    <div class="item-price">
-                      <div class="price">
-                        <div class="price-label">LOWEST ASK</div>
-                        <div class="price-current">$799.00</div>
-                      </div>
-                    </div>
-                    <div class="item-sold">
-                      <span>572 sold</span>
-                    </div>
-                  </a>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
                 </div>
-              </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="item">
-                  <a href="detail.html">
-                    <div class="item-img">
-                      <span class="helper"></span>
-                      <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                    </div>
-                    <div class="item-name">
-                      <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
 
-                    </div>
-                    <div class="item-price">
-                      <div class="price">
-                        <div class="price-label">LOWEST ASK</div>
-                        <div class="price-current">$799.00</div>
-                      </div>
-                    </div>
-                    <div class="item-sold">
-                      <span>572 sold</span>
-                    </div>
-                  </a>
                 </div>
-              </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="item">
-                  <a href="detail.html">
-                    <div class="item-img">
-                      <span class="helper"></span>
-                      <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                    </div>
-                    <div class="item-name">
-                      <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
+                  </div>
+                </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
 
-                    </div>
-                    <div class="item-price">
-                      <div class="price">
-                        <div class="price-label">LOWEST ASK</div>
-                        <div class="price-current">$799.00</div>
-                      </div>
-                    </div>
-                    <div class="item-sold">
-                      <span>572 sold</span>
-                    </div>
-                  </a>
                 </div>
-              </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="item">
-                  <a href="detail.html">
-                    <div class="item-img">
-                      <span class="helper"></span>
-                      <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
-                    </div>
-                    <div class="item-name">
-                      <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
+                  </div>
+                </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
 
-                    </div>
-                    <div class="item-price">
-                      <div class="price">
-                        <div class="price-label">LOWEST ASK</div>
-                        <div class="price-current">$799.00</div>
-                      </div>
-                    </div>
-                    <div class="item-sold">
-                      <span>572 sold</span>
-                    </div>
-                  </a>
                 </div>
-              </div>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
+                  </div>
+                </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="item">
+              <a href="detail.html">
+                <div class="item-img">
+                  <span class="helper"></span>
+                  <img src="https://stockx.imgix.net/Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-2.jpg?fit=fill&amp;bg=FFFFFF&amp;w=600&amp;h=428&amp;auto=format,compress&amp;trim=color">
+                </div>
+                <div class="item-name">
+                  <span>adidas Yeezy Boost 350 V2 Semi Frozen Yellow</span>
+
+                </div>
+                <div class="item-price">
+                  <div class="price">
+                    <div class="price-label">LOWEST ASK</div>
+                    <div class="price-current">$799.00</div>
+                  </div>
+                </div>
+                <div class="item-sold">
+                  <span>572 sold</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -413,31 +441,31 @@
   <!-- :END POPUP ENTRANCE -->
   <!-- :START POPUP SELL -->
   <div id="popSell" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-entrance" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-red">
-            <h5 class="modal-title" id="exampleModalLongTitle">Ask</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-red">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ask</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Which product would you like to sell?</label>
+            <div class="input-group input-group-lg mr-sm-2">
+              <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </span>
+            </div>
           </div>
-          <div class="modal-body">
-              <div class="form-group">
-                  <label for="exampleInputEmail1">Which product would you like to sell?</label>
-                  <div class="input-group input-group-lg mr-sm-2">
-                      <input type="text" class="form-control" placeholder="Search for brand, color, etc." aria-label="Search for brand, color, etc..">
-                      <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                      </span>
-                    </div>
-                </div>
-              
-          </div>
+
         </div>
       </div>
     </div>
+  </div>
   <!-- :END POPUP SELL -->
   <!-- :START OVERLAY -->
   <div id="overlay"></div>
