@@ -22,7 +22,6 @@ a {
 }
 
 body {
-    padding-bottom: 300px;
     font-size: 16px;
     font-weight: 100;
     color: #222;
@@ -61,6 +60,19 @@ a:hover {
 
 #overlay.open {
     display: block;
+}
+
+.label {
+    display: inline-block;
+}
+
+.label-name {
+    margin-right: 5px;
+    color: #999;
+}
+
+.label-value {
+    font-weight: bold;
 }
 
 
@@ -309,10 +321,7 @@ main {
 /* :START FOOTER */
 
 .footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    margin-top: 30px;
     background-color: #222;
 }
 
@@ -444,6 +453,11 @@ header>.alert {
 }
 
 .product-info {}
+
+.product-summary{
+    display: flex;
+    margin-top: 20px;
+}
 
 .product-media img {
     max-width: 100%;
