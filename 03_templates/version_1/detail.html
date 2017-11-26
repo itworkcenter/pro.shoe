@@ -150,7 +150,43 @@
           <div class="product-price">
             <div class="label">
               <span class="label-name">Last Sale</span>
-              <span class="label-value">$540</span>
+              <span class="label-value price-current">$540</span>
+            </div>
+            <div class="trend trend-go-up">
+              <div class="trend-doller">+$37</div>
+              <div class="trend-percentage">(9%)</div>
+            </div>
+            <div class="last-sale text-center">
+              <ul class="list-inline list-link">
+                <li class="list-inline-item">
+                  Size 12
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:;" data-toggle="modal" data-target="#viewAllSales">View All Sales</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-submit">
+            <button type="button" class=" submit-button btn btn-success">
+              <div class="submit-button-cell">
+                <div class="title">$100</div>
+                <div class="title-info">Lowest Ask</div>
+              </div>
+              <div class="submit-button-cell">
+                <div class="title">Buy</div>
+                <div class="title-info">or Bid</div>
+              </div>
+            </button>
+            <div class="last-sale text-center">
+              <ul class="list-inline list-link">
+                <li class="list-inline-item">
+                  Size 10.5
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:;" data-toggle="modal" data-target="#viewAllSales">View All Ask</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -331,6 +367,61 @@
     </div>
   </div>
   <!-- :END POPUP SELL -->
+
+  <!-- :START VIEW ALL SALES -->
+  <div id="viewAllSales" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Sales History</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="product-history">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Sale Price</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$3,300</td>
+                  <td>Wednesday, November 22, 2017</td>
+                  <td>4:11 am EST</td>
+                </tr>
+                <tr>
+                  <td>$3,300</td>
+                  <td>Wednesday, November 22, 2017</td>
+                  <td>4:11 am EST</td>
+                </tr>
+                <tr>
+                  <td>$3,300</td>
+                  <td>Wednesday, November 22, 2017</td>
+                  <td>4:11 am EST</td>
+                </tr>
+                <tr>
+                  <td>$3,300</td>
+                  <td>Wednesday, November 22, 2017</td>
+                  <td>4:11 am EST</td>
+                </tr>
+                <tr>
+                  <td>$3,300</td>
+                  <td>Wednesday, November 22, 2017</td>
+                  <td>4:11 am EST</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- :END VIEW ALL SALES -->
   <!-- :START OVERLAY -->
   <div id="overlay"></div>
 </body>
