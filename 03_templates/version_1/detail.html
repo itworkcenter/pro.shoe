@@ -107,44 +107,7 @@
           <div class="product-option">
             <div class="form-group">
               <label for="shoe-size" class="size-label">Size</label>
-              <div id="shoe-size" class="select-control">
-                <div>
-                  <button type="button" class="btn btn-default " data-toggle="dropdown" data-id="region" title="All">
-                    <!-- react-text: 1629 -->All
-                    <!-- /react-text -->
-                    <!-- react-text: 1630 -->
-                    <!-- /react-text -->
-                    <i class="fa fa-chevron-down"></i>
-                  </button>
-                </div>
-                <div class="select-options">
-                  <div class="us-mens-sizes">U.S. Men's Size</div>
-                  <ul class="list-unstyled">
-                    <li class="select-option active all">
-                      <div class="inset">
-                        <div class="title">All</div>
-                        <div class="subtitle">
-                          <!-- react-text: 1639 -->$
-                          <!-- /react-text -->
-                          <!-- react-text: 1640 -->560
-                          <!-- /react-text -->
-                        </div>
-                      </div>
-                    </li>
-                    <li class="select-option">
-                      <div class="inset">
-                        <div class="title">4</div>
-                        <div class="subtitle">
-                          <!-- react-text: 1645 -->$
-                          <!-- /react-text -->
-                          <!-- react-text: 1646 -->580
-                          <!-- /react-text -->
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <button class="btn product-option-select" data-toggle="modal" data-target="#popupProductOptions"><span id="ProductOptValue">12</span><i class="fa fa-caret-down" aria-hidden="true"></i></button>
             </div>
           </div>
           <div class="product-price">
@@ -173,6 +136,7 @@
                 <div class="title">$100</div>
                 <div class="title-info">Lowest Ask</div>
               </div>
+              <div class="button-divider"></div>
               <div class="submit-button-cell">
                 <div class="title">Buy</div>
                 <div class="title-info">or Bid</div>
@@ -193,11 +157,12 @@
             <button type="button" class=" submit-button btn btn-danger">
               <div class="submit-button-cell">
                 <div class="title">$100</div>
-                <div class="title-info">Lowest Ask</div>
+                <div class="title-info">Lowest Bid</div>
               </div>
+              <div class="button-divider"></div>
               <div class="submit-button-cell">
-                <div class="title">Buy</div>
-                <div class="title-info">or Bid</div>
+                <div class="title">Sell</div>
+                <div class="title-info">or Ask</div>
               </div>
             </button>
             <div class="last-sale text-center">
@@ -562,6 +527,49 @@
     </div>
   </div>
   <!-- :END VIEW ALL BIDS -->
+  <!-- :START POPUP OPTIONS -->
+  <div id="popupProductOptions" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Sizes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="options">
+            <div class="option">
+              <div class="title">8</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">9</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">10</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">11</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">12</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">13</div>
+              <div class="subtitle">$890</div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- :END POPUP OPTIONS -->
   <!-- :START OVERLAY -->
   <div id="overlay"></div>
 </body>

@@ -56,11 +56,10 @@ function (win, doc, $) {
         .resize(function () {
             fixedNav();
         })
-}(window, document, jQuery)
-+
+}(window, document, jQuery) +
 function (win, doc, $) {
     // MOBILE CATEGORY 
-    win.closeCate= function () {
+    win.closeCate = function () {
         $(".category-toggle").click();
     }
     $(".category-toggle-close").click(function () {
@@ -71,5 +70,13 @@ function (win, doc, $) {
     })
     $('.category.collapse').on('hidden.bs.collapse', function () {
         $("#overlay").removeClass("open");
+    })
+}(window, document, jQuery) +
+function (win, doc, $) {
+    $(".option").click(function () {
+        var $this = $(this),
+            val = $(".title", this).html();
+        $this.addClass("selected").siblings(".option").removeClass("selected");
+        $("#ProductOptValue").html(val);
     })
 }(window, document, jQuery)

@@ -109,9 +109,34 @@ a:hover {
 .title{
     font-size: 24px;
 }
+.subtitle{
+    font-size: 14px;
+}
 .title-info{
     color: #eee;
     font-size: 14px;
+    line-height: 14px;
+}
+.options{}
+.option:hover{
+    border-color: #222;
+}
+.option{
+    float: left;
+    margin: 5px;
+    padding: 5px 15px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    text-align: center
+}
+.option.selected{
+    background-color: green;
+}
+.option.selected *{
+    color: white!important;
+}
+.option > .subtitle{
+    color: green;
 }
 /* :END MODULE */
 
@@ -509,6 +534,7 @@ header>.alert {
     margin-left: -10px;
     margin-right: -10px;
     margin-top: 20px;
+    align-items: center;
     text-align: center;
 }
 .product-summary > *{
@@ -517,6 +543,12 @@ header>.alert {
 .product-summary .last-sale{
     margin-top: 5px;
 }
+.product-option-select > * + *{
+    margin-left: 10px;
+}
+.product-option-select{
+    font-size: 24px;
+}
 .product-price > * + *{
     margin-top: 5px;
 }
@@ -524,10 +556,21 @@ header>.alert {
     font-size: 34px;
     font-weight: 300;
 }
+.submit-button{
+    display: flex;
+}
 .submit-button > *{
     display: inline-block;
+    vertical-align: middle;
 }
-
+.button-divider{
+    border-left: 1px solid #fff;
+    align-self: stretch;
+    margin: 0 18px;
+}
+.submit-button .button-divider{
+    border-color: #ccc;
+}
 .product-media img {
     max-width: 100%;
 }
