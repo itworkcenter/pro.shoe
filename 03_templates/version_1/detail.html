@@ -107,7 +107,10 @@
           <div class="product-option">
             <div class="form-group">
               <label for="shoe-size" class="size-label">Size</label>
-              <button class="btn product-option-select" data-toggle="modal" data-target="#popupProductOptions"><span id="ProductOptValue">12</span><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+              <button class="btn product-option-select" data-toggle="modal" data-target="#popupProductOptions">
+                <span id="ProductOptValue">12</span>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
           <div class="product-price">
@@ -131,7 +134,7 @@
             </div>
           </div>
           <div class="product-submit">
-            <button type="button" class=" submit-button btn btn-success">
+            <button type="button" class=" submit-button btn btn-success" data-toggle="modal" data-target="#popupSubmitBid">
               <div class="submit-button-cell">
                 <div class="title">$100</div>
                 <div class="title-info">Lowest Ask</div>
@@ -154,7 +157,7 @@
             </div>
           </div>
           <div class="product-submit">
-            <button type="button" class=" submit-button btn btn-danger">
+            <button type="button" class=" submit-button btn btn-danger" data-toggle="modal" data-target="#popupSubmitAsk">
               <div class="submit-button-cell">
                 <div class="title">$100</div>
                 <div class="title-info">Lowest Bid</div>
@@ -563,13 +566,99 @@
               <div class="title">13</div>
               <div class="subtitle">$890</div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- :END POPUP OPTIONS -->
+  <!-- :START POPUP BID -->
+  <div id="popupSubmitBid" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-entrance" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Bid</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="options">
+            <div class="option">
+              <div class="title">8</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">9</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">10</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">11</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">12</div>
+              <div class="subtitle">$890</div>
+            </div>
+            <div class="option">
+              <div class="title">13</div>
+              <div class="subtitle">$890</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- :END POPUP BID -->
+  <!-- :START POPUP ASK -->
+  <div id="popupSubmitAsk" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-entrance" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ask</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="options">
+              <div class="option">
+                <div class="title">8</div>
+                <div class="subtitle">$890</div>
+              </div>
+              <div class="option">
+                <div class="title">9</div>
+                <div class="subtitle">$890</div>
+              </div>
+              <div class="option">
+                <div class="title">10</div>
+                <div class="subtitle">$890</div>
+              </div>
+              <div class="option">
+                <div class="title">11</div>
+                <div class="subtitle">$890</div>
+              </div>
+              <div class="option">
+                <div class="title">12</div>
+                <div class="subtitle">$890</div>
+              </div>
+              <div class="option">
+                <div class="title">13</div>
+                <div class="subtitle">$890</div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- :END POPUP ASK -->
   <!-- :START OVERLAY -->
   <div id="overlay"></div>
 </body>
