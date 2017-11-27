@@ -644,6 +644,9 @@ header>.alert {
 .submit-product > *{
     padding: 0 15px;
 }
+.submit-product .item .item-img{
+    max-width: 300px;
+}
 .submit-option{
     width: 350px;
 }
@@ -701,6 +704,9 @@ header>.alert {
         max-width: 300px;
     }
     /* :END OVERRIDE COLLAPSE */
+    .submit-product{
+        display: block;
+    }
     .page-side {}
     .navbar .navbar-toggler {
         font-size: 2rem;
