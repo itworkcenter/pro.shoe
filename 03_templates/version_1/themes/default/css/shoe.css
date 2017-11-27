@@ -36,11 +36,15 @@ button,
 a:hover {
     color: #06f;
 }
+
+
 /* OVERRID */
-.list-inline{
+
+.list-inline {
     margin-left: -5px;
     margin-right: -5px;
 }
+
 
 /* :START MODULE */
 
@@ -78,50 +82,62 @@ a:hover {
 .label-value {
     font-weight: bold;
 }
+
 .trend,
-.trend > *{
+.trend>* {
     display: inline-block;
 }
-.trend-go-up:before{
-    content:"";
+
+.trend-go-up:before {
+    content: "";
     display: inline-block;
     border-style: solid;
     border-width: 0 7px 13.9px;
     border-color: transparent transparent #41ad33;
 }
-.trend-go-down:before{
-    content:"";
+
+.trend-go-down:before {
+    content: "";
     display: inline-block;
     border-style: solid;
     border-width: 13.9px 7px 0;
     border-color: #ff5a5f transparent transparent;
 }
-.trend-go-up{
+
+.trend-go-up {
     color: green;
 }
-.trend-go-down{
+
+.trend-go-down {
     color: red;
 }
-.last-sale{
+
+.last-sale {
     font-weight: bold;
     font-size: 13px;
 }
-.title{
+
+.title {
     font-size: 24px;
 }
-.subtitle{
+
+.subtitle {
     font-size: 14px;
 }
-.title-info{
+
+.title-info {
     color: #eee;
     font-size: 14px;
     line-height: 14px;
 }
-.options{}
-.option:hover{
+
+.options {}
+
+.option:hover {
     border-color: #222;
 }
-.option{
+
+.option {
     float: left;
     margin: 5px;
     padding: 5px 15px;
@@ -129,15 +145,20 @@ a:hover {
     cursor: pointer;
     text-align: center
 }
-.option.selected{
+
+.option.selected {
     background-color: green;
 }
-.option.selected *{
+
+.option.selected * {
     color: white!important;
 }
-.option > .subtitle{
+
+.option>.subtitle {
     color: green;
 }
+
+
 /* :END MODULE */
 
 main {
@@ -331,6 +352,7 @@ main {
     line-height: 24px;
 }
 
+
 /* :START ITEM */
 
 .item>a:hover {
@@ -342,16 +364,43 @@ main {
     margin-top: 5px;
 }
 
+.item-group,
+.item-set {}
+
 .item-img img {
     max-width: 95%;
 }
 
-.item-name {
+.item-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     font-family: 'Pragati Narrow', sans-serif;
+}
+.item-brand{
+    font-size: 14px;
+    font-weight: bold;
+}
+.item-info{
+    font-size: 12px;
+}
+.item.level {
+    display: flex;
+    flex-grow: 1;
+}
+.item.level > *{
+    padding: 0 15px;
+}
+.item.level .item-img {
+    max-width: 150px;
+}
+.item.level .item-set{
+
+}
+.item.level .item-title{
+    font-size: 28px;
+    line-height: 28px;
 }
 
 
@@ -398,11 +447,13 @@ main {
     color: white;
     font-weight: 100;
 }
-.list-link{
+
+.list-link {
     margin-left: -10px;
     margin-right: -10px;
     word-spacing: -4px;
 }
+
 .list-link>li {
     position: relative;
     padding: 0 10px;
@@ -529,7 +580,7 @@ header>.alert {
 
 .product-info {}
 
-.product-summary{
+.product-summary {
     display: flex;
     margin-left: -10px;
     margin-right: -10px;
@@ -537,42 +588,76 @@ header>.alert {
     align-items: center;
     text-align: center;
 }
-.product-summary > *{
+
+.product-summary>* {
     padding: 0 10px;
 }
-.product-summary .last-sale{
+
+.product-summary .last-sale {
     margin-top: 5px;
 }
-.product-option-select > * + *{
+
+.product-option-select>*+* {
     margin-left: 10px;
 }
-.product-option-select{
+
+.product-option-select {
     font-size: 24px;
 }
-.product-price > * + *{
+
+.product-price>*+* {
     margin-top: 5px;
 }
-.product-price .price-current{
+
+.product-price .price-current {
     font-size: 34px;
     font-weight: 300;
 }
-.submit-button{
+
+.submit-button {
     display: flex;
 }
-.submit-button > *{
+
+.submit-button>* {
     display: inline-block;
     vertical-align: middle;
 }
-.button-divider{
+
+.button-divider {
     border-left: 1px solid #fff;
     align-self: stretch;
     margin: 0 18px;
 }
-.submit-button .button-divider{
+
+.submit-button .button-divider {
     border-color: #ccc;
 }
+
 .product-media img {
     max-width: 100%;
+}
+
+.submit-product {
+    display: flex;
+    padding: 15px 0;
+}
+.submit-product > *{
+    padding: 0 15px;
+}
+.submit-option{
+    width: 350px;
+}
+.submit-option-section .tab-pane{
+    padding: 15px;
+}
+.submit-option-section.section-button{
+    margin-top: 20px;
+}
+.submit-option-section .nav-link,
+.submit-option-section .form-group > label{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
