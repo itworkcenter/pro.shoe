@@ -741,4 +741,7 @@ header>.alert {
     .navbar .dropdown-menu {
         display: none!important;
     }
+    .submit-option{
+        width: 100%;
+    }
 }
