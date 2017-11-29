@@ -303,6 +303,12 @@ main {
 
 
 /* SHOW BOX */
+.show-container{
+    display: none;
+}
+.show-container.active{
+    display: block;
+}
 
 .show-box {
     margin-top: 50px;

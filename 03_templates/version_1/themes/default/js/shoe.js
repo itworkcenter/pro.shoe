@@ -1,11 +1,15 @@
 + function (win, doc, $) {
     // MAIN SEARCH
     $("#mainSearchTitle").html($(".carousel-item.active .carousel-caption").html());
-    $("#mainSearchBanner").on("slide.bs.carousel", function () {
-        var api = $(this).data("bs.carousel"),
-            $curr = $(".carousel-caption", api._activeElement);
+    $("#mainSearchBanner").on("slid.bs.carousel", function () {
+        var $this = $(this),
+            $curr_item = $(".carousel-item.active", this),
+            index = $curr_item.index(),
+            api = $this.data("bs.carousel"),
+            $curr_caption = $(".carousel-caption", $curr_item);
 
-        $("#mainSearchTitle").html($curr.html())
+        $("#mainSearchTitle").html($curr_caption.html());
+        $(".show-container").eq(index).addClass("active").siblings().removeClass("active");
     })
 }(window, document, jQuery)
 
