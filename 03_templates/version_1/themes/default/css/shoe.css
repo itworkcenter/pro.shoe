@@ -753,4 +753,13 @@ header>.alert {
     .main-search-title{
         font-size: 40px;
     }
+    .product-summary{
+        display: block;
+    }
+    .product-summary > * + *{
+       margin-top: 10px;
+    }
+    .submit-button{
+        display: inline-block;
+    }
 }
